@@ -1,0 +1,65 @@
+[
+  {
+    "question": "TK1.1 \u2013 Inclusion of a change control process",
+    "answers": [
+      "variations, baseline, CCP aligns this with governance structures and organisational strategy",
+      "traceable decision making \u2013 delegated authority, accountability, auditability (=transparency for SH)",
+      "benefit realisation chances, before/while escalating/rebaselining",
+      "undermines cost, schedule, quality baselines, affect entire departments' operations",
+      "sponsors to make better decisions"
+    ]
+  },
+  {
+    "question": "TK1.2 \u2013 Capturing and recording change requests",
+    "answers": [
+      "reviews: risk, schedule, cost \u2013 deviation from tolerated variance",
+      "change request form, clear, standardised",
+      "change log/register, (5 options with +/-)"
+    ]
+  },
+  {
+    "question": "TK1.3 \u2013 High-level impact of a proposed change",
+    "answers": [
+      "Generic Impact Assessment: SMEs/key SH, working assumptions, Iterative estimation",
+      "risk and opp assessment techniques",
+      "benefits, cost (CB analysis), time, quality, resource & dependencies (scenario anal.)"
+    ]
+  },
+  {
+    "question": "TK1.4 \u2013 Justifying approval, rejection, or deferral",
+    "answers": [
+      "compare change against BC, benefits realisation plan and portfolio/strategy alignment/fit",
+      "decision gate criteria, risk appetite and contingency availability",
+      "SH influence/own some of the reqs",
+      "Quantitative aspect (cost/benefit, NPV, earned value)"
+    ]
+  },
+  {
+    "question": "TK1.5 \u2013 Communicating outcomes",
+    "answers": [
+      "openness and alignment with SH, Ethical thing to do and aligns with audit and assurance processes",
+      "continuous improvement \u2013 organisational knowledge management",
+      "informed decisions, re baseline plans and budgets promptly"
+    ]
+  },
+  {
+    "question": "TK1.6 \u2013 Applying an approved change",
+    "answers": [
+      "formal authorisation",
+      "update the baselines for each",
+      "communicate",
+      "review change as part of continuous improvement and benefits review",
+      "configuration control to ensure outputs match approved specs"
+    ]
+  },
+  {
+    "question": "TK1.7 \u2013 Patterns of change and trend analysis",
+    "answers": [
+      "statistical trend analysis (below), moving averages, regression analysis, comparative analysis",
+      "PM to then characterise the trend \u2013 direction, strength",
+      "descriptive, diagnostic, predictive",
+      "limitations: bias in interpretation, size of sample",
+      "verification, identified or suspected"
+    ]
+  }
+]
