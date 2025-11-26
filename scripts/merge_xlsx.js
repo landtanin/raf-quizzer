@@ -1,14 +1,17 @@
 #!/usr/bin/env node
 /**
  * Parse quizzer-1.xlsx and merge questions with existing deck.json
- * The xlsx has questions as column headers with answers in rows below
+ *
+ * The xlsx structure:
+ * - Column headers are TK1.1 questions
+ * - Within each column, TK headers in cells mark new questions
+ * - Non-TK cells following a TK header are answers for that question
  */
 
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
-// Get raw JSON from xlsx using npx xlsx-cli
 const xlsxPath = path.resolve(__dirname, '../quizzer-1.xlsx');
 const deckPath = path.resolve(__dirname, '../web/public/deck.json');
 
@@ -16,26 +19,62 @@ console.log('Parsing quizzer-1.xlsx...');
 const rawJson = execSync(`npx xlsx-cli "${xlsxPath}" --json`, { encoding: 'utf-8' });
 const rows = JSON.parse(rawJson);
 
-// Convert column-based format to question/answers format
-// Each column header is a question, each row has an answer for that question
-const questionMap = new Map();
+// Build column-wise data: for each column, collect all values in order
+const columns = new Map();
 
-for (const row of rows) {
-  for (const [question, answer] of Object.entries(row)) {
-    if (!question || !answer) continue;
-
-    // Skip if this looks like a header for another question (starts with TK)
-    const trimmedAnswer = String(answer).trim();
-    if (!trimmedAnswer) continue;
-    if (/^TK\d/.test(trimmedAnswer)) continue;
-
-    // Clean up question text (remove trailing numbers like _1)
-    const cleanQuestion = question.replace(/_\d+$/, '').trim();
-
-    if (!questionMap.has(cleanQuestion)) {
-      questionMap.set(cleanQuestion, new Set());
+// Get all column names from first row
+if (rows.length > 0) {
+  for (const colName of Object.keys(rows[0])) {
+    const cleanName = colName.replace(/_\d+$/, '').trim();
+    if (!columns.has(cleanName)) {
+      columns.set(cleanName, []);
     }
-    questionMap.get(cleanQuestion).add(trimmedAnswer);
+  }
+}
+
+// Collect all values for each column
+for (const row of rows) {
+  for (const [colName, value] of Object.entries(row)) {
+    const cleanName = colName.replace(/_\d+$/, '').trim();
+    if (value && String(value).trim()) {
+      columns.get(cleanName).push(String(value).trim());
+    }
+  }
+}
+
+// Parse each column: TK headers start new questions, other cells are answers
+const questionMap = new Map();
+const tkPattern = /^TK\d/;
+
+for (const [colHeader, values] of columns.entries()) {
+  // Start with column header as first question
+  let currentQuestion = colHeader;
+  let currentAnswers = [];
+
+  for (const value of values) {
+    if (tkPattern.test(value)) {
+      // Save previous question if it has answers
+      if (currentQuestion && currentAnswers.length > 0) {
+        if (!questionMap.has(currentQuestion)) {
+          questionMap.set(currentQuestion, new Set());
+        }
+        currentAnswers.forEach(a => questionMap.get(currentQuestion).add(a));
+      }
+      // Start new question
+      currentQuestion = value;
+      currentAnswers = [];
+    } else {
+      // Add as answer to current question
+      currentAnswers.push(value);
+    }
+  }
+
+  // Save last question
+  if (currentQuestion && currentAnswers.length > 0) {
+    if (!questionMap.has(currentQuestion)) {
+      questionMap.set(currentQuestion, new Set());
+    }
+    currentAnswers.forEach(a => questionMap.get(currentQuestion).add(a));
   }
 }
 
@@ -50,11 +89,13 @@ for (const [question, answersSet] of questionMap.entries()) {
 
 console.log(`Found ${newCards.length} questions in quizzer-1.xlsx`);
 
-// Load existing deck
+// Load existing deck (original 7 questions only)
+// Reset to sample-deck.json to avoid duplicates from previous run
+const sampleDeckPath = path.resolve(__dirname, '../sample-deck.json');
 let existingDeck = [];
-if (fs.existsSync(deckPath)) {
-  existingDeck = JSON.parse(fs.readFileSync(deckPath, 'utf-8'));
-  console.log(`Existing deck has ${existingDeck.length} questions`);
+if (fs.existsSync(sampleDeckPath)) {
+  existingDeck = JSON.parse(fs.readFileSync(sampleDeckPath, 'utf-8'));
+  console.log(`Starting from sample deck with ${existingDeck.length} questions`);
 }
 
 // Merge: add new questions that don't exist
@@ -64,6 +105,7 @@ let addedCount = 0;
 for (const card of newCards) {
   if (!existingQuestions.has(card.question)) {
     existingDeck.push(card);
+    existingQuestions.add(card.question);
     addedCount++;
   }
 }

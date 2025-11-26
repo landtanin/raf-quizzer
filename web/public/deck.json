@@ -81,7 +81,12 @@
       "finance expert",
       "external funding often comes with costs",
       "long projects",
-      "interest and exchange rate variations",
+      "interest and exchange rate variations"
+    ]
+  },
+  {
+    "question": "TK1.2 Critically analyse ways in which organisations might release project funding",
+    "answers": [
       "decision gates, milestones",
       "delivery or handover",
       "procurement, contractual dates",
@@ -90,7 +95,12 @@
       "contingency mgt, use if necessary",
       "known risks, reserves for unknown issues",
       "untouched and insufficient contingency show lack of risk alignment",
-      "if reserves are not sufficient, cost change control",
+      "if reserves are not sufficient, cost change control"
+    ]
+  },
+  {
+    "question": "TK1.3 Critically evaluate the characteristics of a consistent approach to estimating",
+    "answers": [
       "time, resource and costs",
       "for appraisal, for planning, for budget/affordability setting or for contingency planning",
       "more accurate with time as detailed information becomes available. Noting any assumptions will always help",
@@ -98,7 +108,12 @@
       "judgement",
       "innovative projects there will be little data",
       "guidance and training",
-      "improve consistency between similar types of projects and within departments/organisations",
+      "improve consistency between similar types of projects and within departments/organisations"
+    ]
+  },
+  {
+    "question": "TK1.4 Critically evaluate the range of metrics which can determine the value of a project to an organisation",
+    "answers": [
       "return on the organisation's investment",
       "must always be justified",
       "limited funds for groups of opportunities",
@@ -110,14 +125,24 @@
       "hurdle rates",
       "can also account for risk, margin currency exchanges, effectively by discounting the IRR based on forecast effect of key financial risks",
       "Weighted Average Cost of Capital (WACC) uses company/project equity and debt to work out minimal hurdle rate required",
-      "portfolio level",
+      "portfolio level"
+    ]
+  },
+  {
+    "question": "TK1.5 Critically analyse the information expected to be available for financial reviews",
+    "answers": [
       "once have budget and cash flow forecast",
       "actual expenditure tracking",
       "accounting systems to get figures, finance experts?",
       "exceed budgets calls the PM to intervene",
       "rolling forecast into the future, possibly divided into financial control periods",
       "deviations between previous forecast and latest actuals",
-      "backward looking explanations for deviations",
+      "backward looking explanations for deviations"
+    ]
+  },
+  {
+    "question": "TK1.6 Critically evaluate tools and techniques available to monitor and analyse the financial performance of a project",
+    "answers": [
       "excel for raw cost data or erp/SAP (Accounting figures - cash or accrual method (matching principle) +/-)",
       "consider cost and schedule performance at the same time",
       "forecast creation based on current performance: estimate to and at completion, cost and schedule variance, cost and schedule performance index",
@@ -146,7 +171,12 @@
       "align with governance and life cycle",
       "decision gates",
       "stage",
-      "peer",
+      "peer"
+    ]
+  },
+  {
+    "question": "TK1.2 Sources of data to inform reviews",
+    "answers": [
       "relevance",
       "needs/type",
       "informs data needs vs excessive/irrelevant/untimely data",
@@ -158,7 +188,12 @@
       "secondary/indirect",
       "up to date and valid",
       "validated through stakeholder/peer reviews, source verifications or simulations/testing",
-      "baseline data should be frozen",
+      "baseline data should be frozen"
+    ]
+  },
+  {
+    "question": "TK1.3 Aligning reviews with governance processes",
+    "answers": [
       "compliance with internal policies, regulatory requirements and industry standards",
       "non compliance, fines and legal issues",
       "quality assurance",
@@ -167,7 +202,12 @@
       "closure if needed",
       "work is well managed",
       "wider business transparency and control",
-      "continuous improvement",
+      "continuous improvement"
+    ]
+  },
+  {
+    "question": "TK1.4 Reporting and responding to project deviations",
+    "answers": [
       "Identify",
       "Deviation from baseline",
       "schedule",
@@ -183,7 +223,12 @@
       "control, transparency and timely correction",
       "variance reports",
       "root cause analysis: 5 whys",
-      "prevents recurrence BUT requires time, expertise, and resources",
+      "prevents recurrence BUT requires time, expertise, and resources"
+    ]
+  },
+  {
+    "question": "TK1.5 Stakeholder involvement in review outcomes",
+    "answers": [
       "internal: sponsor, client, team members, PMO, (programme) manager",
       "external: suppliers, regulatory bodies + local gvt & businesses",
       "identified and mapped",
@@ -195,7 +240,12 @@
       "sign off on approvals",
       "managed and targeted",
       "co-creation",
-      "high power, high interest groups",
+      "high power, high interest groups"
+    ]
+  },
+  {
+    "question": "TK1.6 Actions for re-planning after deviations",
+    "answers": [
       "Risk becomes issue: Consider contingency/action plans",
       "escalation",
       "resources may need to be reallocated",
@@ -205,16 +255,27 @@
       "config/scope change",
       "cost change control",
       "root cause",
+      "decision gates",
       "unable to meet its objectives",
       "no longer aligned",
       "no longer a viable business case",
-      "end all or part",
+      "end all or part"
+    ]
+  },
+  {
+    "question": "TK1.7 Why planned reviews might need to change",
+    "answers": [
       "based on a baseline of scope /cost /programme /resources",
       "Internal and external changes",
       "emergence of risk esp unknown external",
       "Stakeholder reqs",
       "different reviews",
-      "different attendees, frequency, additional floating stage gate? external audit? different focus in reviews?",
+      "different attendees, frequency, additional floating stage gate? external audit? different focus in reviews?"
+    ]
+  },
+  {
+    "question": "TK1.8 Impact of reviews on business case and wider organisation",
+    "answers": [
       "Business Case",
       "refinement of objectives",
       "risk/op management",
@@ -243,7 +304,12 @@
       "- trusting/delegating: [for skilled/motivated team, need to know starting level]",
       "- servant leadership: well being of team = focus, can lack authority in high pressure situations",
       "- transactional: clear roles/rewards, for compliance/time critical. Low innovation",
-      "- Confidence/ability model: support and instruction for nervous low ability, neither for confident and high ability, instruction for confident , support for high ability",
+      "- Confidence/ability model: support and instruction for nervous low ability, neither for confident and high ability, instruction for confident , support for high ability"
+    ]
+  },
+  {
+    "question": "TK1.2 Critically analyse the behaviours and interpersonal skills that underpin effective leadership.",
+    "answers": [
       "- goal/vision (/standard setting)",
       "- delegating (-> dvpt)",
       "- coaching, supporting, developing (teaching how to learn, knowing how)",
@@ -253,20 +319,35 @@
       "- emotional intelligence and communication",
       "- adaptability (especially vs conflict)",
       "- reliability -> trust",
-      "- decision making and judgement",
+      "- decision making and judgement"
+    ]
+  },
+  {
+    "question": "TK1.3 Critically evaluate how understanding a project environment affects the leadership style.",
+    "answers": [
       "- Understand Project context: PESTLE, VUCA, SWOT",
       "- Size: More strategic/long term & people focused on major, smaller more task/situational",
       "- env changes (SH reqs, regs, market) require agility and rapid decision making",
       "- local and org culture form part of env and influence. In turn PM can improve company culture through trust, openness and psychological safety.",
       "- remote teams: communication and feedback to create and guide towards a common sense of purpose",
-      "- 'survival' skills, honed with experience and knowledge: anticipation, judgement (people, potential issues), decision making",
+      "- 'survival' skills, honed with experience and knowledge: anticipation, judgement (people, potential issues), decision making"
+    ]
+  },
+  {
+    "question": "TK1.4 Critically analyse the structure and content of a project vision and its importance.",
+    "answers": [
       "- why we are doing the project: regular, open, honest (repeated) comms",
       "- kick off/team/sponsor briefings to reinforce message",
       "- tailoring to teams/members of teams so they can understand their contribution in the bigger picture?",
       "- Purpose/objectives(linked to org ones 'strategic alignment' ), scope, boundaries, value proposition, success criteria, SH impact",
       "- All summarised in short statement, core values, goal",
       "- clear, simple, as/inspirational language: sense of purpose &excitement",
-      "- Vision should be North Star to constantly guide decision making, team and SH engagement, scope control/change",
+      "- Vision should be North Star to constantly guide decision making, team and SH engagement, scope control/change"
+    ]
+  },
+  {
+    "question": "TK1.5 Critically evaluate methods for addressing challenges within a project environment",
+    "answers": [
       "- proactive: communication (more if remote), particularly of the (common) vision and purpose",
       "- active listening, behaviour awareness, openness, structured problem solving rather than blame",
       "- cultural/language barriers to be considered as early as possible",
@@ -297,7 +378,12 @@
       "register with planned responses",
       "description, cause, probab, impact, mitigation, fallbacks, status and responsible owners (person best placed",
       "(shared) system rather than manual spreadsheet",
-      "Separating Cause, event and effect helps reduce bias",
+      "Separating Cause, event and effect helps reduce bias"
+    ]
+  },
+  {
+    "question": "TK1.2 Techniques to assess risk",
+    "answers": [
       "qualitatively indicates relative significance and any links and prioritise",
       "likelihood and impact (cost, schedule, benefits, other benefits/risks)",
       "Sufficient for many projects",
@@ -313,7 +399,12 @@
       "Decision Trees",
       "Sensitivity Analysis",
       "which factors",
-      "influence",
+      "influence"
+    ]
+  },
+  {
+    "question": "TK1.3 Types of impact risks and issues could have",
+    "answers": [
       "Scope/Requirements",
       "change control",
       "Schedule and Resource",
@@ -326,7 +417,12 @@
       "External",
       "Regulatory changes, market shifts, natural disasters, political instability, new laws, third-party contractor failure",
       "fines, major delays, project shutdowns or require significant changes",
-      "obsolete",
+      "obsolete"
+    ]
+  },
+  {
+    "question": "TK1.4 Techniques to improve issue management through continuous improvement",
+    "answers": [
       "continuous Improvement involves gathering performance data (quant and qual), analysing it and implementing identified improvements",
       "Shewhart/Deming Cycle (Plan Do Check Act)",
       "structured, and infinitely enhancing",
@@ -341,7 +437,12 @@
       "DMADV for new processes: Define, Measure, Analyse, Design, Verify",
       "ITIL Continual Service Improvement - seeks to prevent issues",
       "7 step process for managing IT related issues",
-      "Logs Known errors",
+      "Logs Known errors"
+    ]
+  },
+  {
+    "question": "TK1.5 Need for ongoing ownership of risks",
+    "answers": [
       "show support and collaboration for proper institutional management of risk",
       "not assigned",
       "likely to fall through cracks",
