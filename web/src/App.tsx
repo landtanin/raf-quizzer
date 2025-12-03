@@ -185,7 +185,7 @@ function App() {
       }
     }
 
-    fetch("/deck.json")
+    fetch("deck.json")
       .then((res) => (res.ok ? res.json() : []))
       .then((data) => {
         const parsed = cleanDeck(data);
