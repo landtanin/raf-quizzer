@@ -52,15 +52,15 @@ def load_rows(path: Path, sheet: str = "sheet1") -> List[List[str]]:
         return rows
 
 
-def rows_to_cards(rows: Iterable[List[str]], header_regex: str = r"^TK") -> list[dict]:
+def rows_to_cards(rows: Iterable[List[str]], header_regex: str = r"^TK", col_index: int = 0) -> list[dict]:
     """Group rows into question/answer blocks keyed by a header regex."""
     header_re = re.compile(header_regex, flags=re.IGNORECASE)
     cards: list[dict] = []
     current: dict | None = None
     for row in rows:
-        if not row:
+        if not row or len(row) <= col_index:
             continue
-        cell = (row[0] or "").strip()
+        cell = (row[col_index] or "").strip()
         if not cell:
             continue
         if header_re.match(cell):
@@ -99,10 +99,19 @@ def main(argv: list[str]) -> int:
     args = parser.parse_args(argv)
 
     rows = load_rows(args.xlsx_path, sheet=args.sheet)
-    cards = rows_to_cards(rows, header_regex=args.header_pattern)
+
+    # Determine the number of columns
+    num_cols = max(len(row) for row in rows) if rows else 0
+
+    # Process all columns and combine cards
+    all_cards: list[dict] = []
+    for col_idx in range(num_cols):
+        col_cards = rows_to_cards(rows, header_regex=args.header_pattern, col_index=col_idx)
+        all_cards.extend(col_cards)
+
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(cards, indent=2), encoding="utf-8")
-    print(f"Wrote {len(cards)} cards to {args.output}")
+    args.output.write_text(json.dumps(all_cards, indent=2), encoding="utf-8")
+    print(f"Wrote {len(all_cards)} cards to {args.output}")
     return 0
 
 

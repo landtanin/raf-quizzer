@@ -160,5 +160,608 @@
       "resources to be considered on a organisational level",
       "stakeholder and leadership engagement"
     ]
+  },
+  {
+    "question": "TK2.1 \u2013 Critically evaluate the importance of the inclusion of a change control process within a project governance structure.",
+    "answers": [
+      "variations, baseline, CCP aligns this with governance structures and organisational strategy",
+      "traceable decision making \u2013 delegated authority, accountability, auditability (=transparency for SH)",
+      "benefit realisation chances, before/while escalating/rebaselining",
+      "undermines cost, schedule, quality baselines, affect entire departments' operations",
+      "sponsors to make better decisions",
+      "escalation/change control with/to the reviewers (at least PM and sponsor)"
+    ]
+  },
+  {
+    "question": "TK2.2 \u2013 Critically analyse ways of capturing and recording change requests.",
+    "answers": [
+      "continuous learning and cross pollination",
+      "reviews: risk, schedule, cost \u2013 deviation from tolerated variance",
+      "change request form, clear, standardised",
+      "change log/register, (5 options with +/-)",
+      "sponsor"
+    ]
+  },
+  {
+    "question": "TK2.3 \u2013 Critically evaluate techniques to determine the high-level impact of a proposed change.",
+    "answers": [
+      "decision gates",
+      "Generic Impact Assessment: SMEs/key SH, working assumptions, Iterative estimation",
+      "risk and opp assessment techniques",
+      "benefits, cost (CB analysis), time, quality, resource & dependencies (scenario anal.)",
+      "- delegating (-> dvpt)"
+    ]
+  },
+  {
+    "question": "TK2.4 \u2013 Critically evaluate ways to justify whether a change should be approved, rejected, or deferred.",
+    "answers": []
+  },
+  {
+    "question": "TK3.2 Critically evaluate how to obtain relevant sources of data to inform reviews.",
+    "answers": [
+      "compare change against BC, benefits realisation plan and portfolio/strategy alignment/fit",
+      "decision gate criteria, risk appetite and contingency availability",
+      "SH influence/own some of the reqs",
+      "Quantitative aspect (cost/benefit, NPV, earned value)",
+      "Depends on attendees: sponsor, project manager, governance board/management, PMO, specialists who are able to provide good challenge"
+    ]
+  },
+  {
+    "question": "TK2.5 \u2013 Critically analyse the purpose of communicating the outcomes of evaluated changes.",
+    "answers": [
+      "internal",
+      "openness and alignment with SH, Ethical thing to do and aligns with audit and assurance processes",
+      "continuous improvement \u2013 organisational knowledge management",
+      "secondary/indirect",
+      "Both:"
+    ]
+  },
+  {
+    "question": "TK2.6 \u2013 Critically analyse the steps to applying an approved change.",
+    "answers": [
+      "baseline data should be frozen",
+      "formal authorisation",
+      "update the baselines for each",
+      "communicate",
+      "review change as part of continuous improvement and benefits review",
+      "configuration control to ensure outputs match approved specs",
+      "compliance with internal policies, regulatory requirements and industry standards"
+    ]
+  },
+  {
+    "question": "TK2.7 \u2013 Critically analyse patterns of change to inform trend analysis.",
+    "answers": [
+      "quality assurance",
+      "business case",
+      "change in cost and benefits",
+      "closure if needed",
+      "limitations: bias in interpretation, size of sample",
+      "verification, identified or suspected",
+      "continuous improvement",
+      "- collaboration",
+      "- empirically given better results"
+    ]
+  },
+  {
+    "question": "TK3.4 Critically evaluate ways of reporting and responding to project deviations.",
+    "answers": [
+      "Identify",
+      "Deviation from baseline",
+      "schedule",
+      "budget",
+      "scope",
+      "- local differences",
+      "- external validation/challenge",
+      "- delphi method",
+      "cause",
+      "risk register",
+      "team/stakeholder feedback and communication",
+      "- minimum, most likely and maximum",
+      "Respond",
+      "control, transparency and timely correction",
+      "variance reports",
+      "root cause analysis: 5 whys",
+      "Improve",
+      "Control",
+      "- approved at decision gate prior to deployment/delivery"
+    ]
+  },
+  {
+    "question": "TK3.5 Critically analyse how stakeholders can be involved in the review outcomes. (identified, consulted, co-creators, helping hand, consultees)",
+    "answers": [
+      "internal: sponsor, client, team members, PMO, (programme) manager",
+      "external: suppliers, regulatory bodies + local gvt & businesses",
+      "identified and mapped",
+      "involved",
+      "improves engagement - expectation meeting",
+      "brainstorming workshops or public meetings",
+      "- committee",
+      "- better understanding",
+      "- actual start and finish dates",
+      "- reliable (primary) sources,",
+      "- % updates",
+      "- remaining duration updates",
+      "huge project",
+      "focus on higher impact risks",
+      "clear responsibilities, instructions/language",
+      "- approved and frozen",
+      "- gaps between baseline and actual",
+      "- critical path activities move out the project end date & possibly milestones (incl payment, incentives, resources)",
+      "- non critical acitivities consume float",
+      "- become critical",
+      "- affect dependent activities and dependencies themselves can change",
+      "- claw back delays",
+      "- other activities could be delayed",
+      "- multiple baselines or rebaselining",
+      "- what if scenario analysis using risk register"
+    ]
+  },
+  {
+    "question": "TK3.1 Critically analyse factors that need to be evaluated when establishing a schedule of project reviews.",
+    "answers": [
+      "internal and external stakeholder needs",
+      "safety",
+      "performance",
+      "quality audit (by independent body)",
+      "Risks & issues",
+      "- iterative",
+      "Time: programme progress, delays, trends",
+      "- WBS with all tasks defined, effort estimate and resource estimate",
+      "Integrated Baseline Reviews (IBR - macro review...)",
+      "benefits/after action (6-12 months after handover",
+      "reviews carried out to date and further improvement",
+      "- baseline schedule and monitor",
+      "align with governance and life cycle",
+      "Facilitators",
+      "stage",
+      "peer",
+      "likely to lead to project cost increase, benefits delay and even a pause in progress.",
+      "Separating Cause, event and effect helps reduce bias",
+      "- outside the project team's control, such as vendors, regulatory bodies, or other projects.",
+      "- -",
+      "relevance",
+      "needs/type",
+      "informs data needs vs excessive/irrelevant/untimely data",
+      "- continuous and transparent communication",
+      "multiple sources"
+    ]
+  },
+  {
+    "question": "TK4.3 Critically evaluate project planning techniques.",
+    "answers": [
+      "external",
+      "primary",
+      "activities and dependencies to allocate resources and manage risk",
+      "- Size: More strategic/long term & people focused on major, smaller more task/situational",
+      "validated through stakeholder/peer reviews, source verifications or simulations/testing",
+      "- start and end dates",
+      "- scarce resource",
+      "- Gantt chart",
+      "- Critical path approach (CP) focuses on activities and highlights key tasks - does not consider resources. Traditional approach"
+    ]
+  },
+  {
+    "question": "TK3.3 Critically evaluate the purpose of aligning reviews with governance processes.",
+    "answers": [
+      "- float",
+      "non compliance, fines and legal issues",
+      "- longest sequence",
+      "- Critical chain (CC) emphasises on",
+      "- resource constraints",
+      "- avoid multitasking",
+      "work is well managed",
+      "wider business transparency and control",
+      "- task focus solely on",
+      "late project completion or may require a cash injection/scope change",
+      "- proactive: communication (more if remote), particularly of the (common) vision and purpose",
+      "- active listening, behaviour awareness, openness, structured problem solving rather than blame"
+    ]
+  },
+  {
+    "question": "TK4.4 Critically evaluate schedule estimating techniques.",
+    "answers": [
+      "- reactive: spelling out the issue with the (1 or +) parties. Set clear expectation, draw on different leadership styles depending on knowledge of the challenged/ing partie/s. firmness&empathy",
+      "- Robust assumption",
+      "- people doing the work.",
+      "- expertise",
+      "- workshop",
+      "- non-novel projects",
+      "- similar scope projects",
+      "humans - emotion, honesty",
+      "trust being reciprocated/extended"
+    ]
+  },
+  {
+    "question": "TK6.4 Critically evaluate techniques to improve issue management through continuous improvement.",
+    "answers": [
+      "- Bottom up for innovative projects",
+      "- different perspectives/stakeholders",
+      "- ideal",
+      "structured, and infinitely enhancing",
+      "- rogram Evaluation and Review Technique (PERT) feeds in the variance between these 3 values into a CP type analysis to give a broader understanding (vs traditional approach of just one end date)",
+      "- variance, and underlying assumptions, constitute the basis for capturing/further understanding risks, and undertaking their mitigation.",
+      "- Review historical data/lessons learned and risk/assumptions register"
+    ]
+  },
+  {
+    "question": "TK4.5 Critically evaluate the need for an approved baseline schedule.",
+    "answers": [
+      "whyx5",
+      "3. video conference",
+      "4. written (email/press release): precise, auditable but time consuming",
+      "DMADV for new processes: Define, Measure, Analyse, Design, Verify",
+      "- challenge and review (from SH)",
+      "- Common initial understanding enables clear communication and accountability",
+      "- base to produce reports, identify variance&impacts and if necessary 1. capture and mitigate risks 2. implement project controls",
+      "- difference with the final actual schedule captured to learn lessons."
+    ]
+  },
+  {
+    "question": "TK4.6 Critically analyse the ways to update the schedule.",
+    "answers": [
+      "- scheduled review",
+      "show support and collaboration for proper institutional management of risk",
+      "not assigned",
+      "likely to fall through cracks",
+      "risks need to be monitored from capture to ALARP mitigation or project close out",
+      "roles rather than names",
+      "workflow software",
+      "regular meetings & check-ins",
+      "email",
+      "I also suggest we look at their SH communications",
+      "training if necessary",
+      "resist temptation to give bulk of risks to really senior people",
+      "have time, money and resources needed",
+      "shifting from an 'old school' culture",
+      "easier/quicker to address issues"
+    ]
+  },
+  {
+    "question": "TK4.1 Critically analyse key planning considerations when creating a schedule.",
+    "answers": [
+      "- when work is planned",
+      "- estimate.",
+      "- proportional",
+      "- /portfolio schedule",
+      "- dependencies",
+      "- persuading/mentoring/coaching: when time for team dvpt",
+      "- buy in of people doing",
+      "- trusting/delegating: [for skilled/motivated team, need to know starting level]",
+      "- relationships between tasks",
+      "- optimise the schedule and test the logic",
+      "- /time success criteria",
+      "wide range of people and methods",
+      "- project support/PMO function.",
+      "info, medium and time"
+    ]
+  },
+  {
+    "question": "TK4.2 Critically evaluate the impact of internal and external schedule dependencies on a project.",
+    "answers": [
+      "- goal/vision (/standard setting)",
+      "- intro, context of proj",
+      "- coaching, supporting, developing (teaching how to learn, knowing how)",
+      "- feedback-giving (basis for learning)",
+      "- not directly managed",
+      "- long lead times",
+      "- can halt a critical path task, with little recourse",
+      "- strong backup and contingency plans",
+      "- reliability -> trust",
+      "risk owners and stakeholders contribution increases reliability",
+      "- software, p6, excel, gantt chart.",
+      "- Understand Project context: PESTLE, VUCA, SWOT",
+      "numerical risk management",
+      "- technical and BaU",
+      "- local and org culture form part of env and influence. In turn PM can improve company culture through trust, openness and psychological safety.",
+      "- remote teams: communication and feedback to create and guide towards a common sense of purpose",
+      "- 'survival' skills, honed with experience and knowledge: anticipation, judgement (people, potential issues), decision making",
+      "Decision Trees",
+      "- 3 pt",
+      "- precedence/network diagram.",
+      "- why we are doing the project: regular, open, honest (repeated) comms",
+      "- software",
+      "- tailoring to teams/members of teams so they can understand their contribution in the bigger picture?",
+      "- Purpose/objectives(linked to org ones 'strategic alignment' ), scope, boundaries, value proposition, success criteria, SH impact",
+      "- All summarised in short statement, core values, goal",
+      "- clear, simple, as/inspirational language: sense of purpose &excitement",
+      "- most optimistic estimate available and float",
+      "- as a buffer at the end"
+    ]
+  },
+  {
+    "question": "TK5.5 Critically evaluate methods for addressing challenges within a project environment",
+    "answers": []
+  },
+  {
+    "question": "TK8.5 Critically evaluate ways in which procurement negotiations can be conducted.",
+    "answers": [
+      "Financial",
+      "cost change control",
+      "- cultural/language barriers to be considered as early as possible",
+      "Technical",
+      "- levels of problem: from mild annoyance to illegal behaviour. Some things to report immediately and not PM job to resolve.",
+      "- collaboration with all/any relevant parties rather than",
+      "- realise limitations of conflict resolution at local level - escalate through management or HR.",
+      "- Stress - Yerkes Dobson law: humans perform best halfway between sleep state and total panic. Monitor levels in team particularly on intense projects.",
+      "obsolete",
+      "adjust plans",
+      "- schedule progress meetings",
+      "- review scope and identify any gaps as soon as they appear (could comne from change elsewhere, financial decisions, external impacts etc",
+      "quantitative: traffic counts for diversion, page views, social media likes etc",
+      "continuous Improvement involves gathering performance data (quant and qual), analysing it and implementing identified improvements",
+      "Shewhart/Deming Cycle (Plan Do Check Act)"
+    ]
+  },
+  {
+    "question": "TK7.5 Critically evaluate the range of methods and media available for project communications.",
+    "answers": [
+      "six sigma: enables root cause identification",
+      "DMAIC for existing processes",
+      "Define",
+      "Measure",
+      "Analyse",
+      "2. telephone",
+      "- pre agreed T&Cs including pricing: long term certainty for suppliers",
+      "- more efficient: reduced timescales and transaction costs, teams can focus on delivery",
+      "5. text message or instant messaging: cheap, easy, accessible",
+      "ITIL Continual Service Improvement - seeks to prevent issues",
+      "7 step process for managing IT related issues",
+      "Logs Known errors",
+      "- Uniformity: helps meet quality standards regulatory requirements and reduce variation",
+      "- long term planning and resource allocation: more robust time and cost forecasts"
+    ]
+  },
+  {
+    "question": "TK7.6 Critically evaluate how stakeholders can provide feedback.",
+    "answers": []
+  },
+  {
+    "question": "TK6.5 Critically evaluate the need for ongoing ownership of risks.",
+    "answers": [
+      "if a message is misunderstood, generates unexpected reaction, or no reaction, this signals the need to revisit the strategy/tactics",
+      "seek feedback:",
+      "staff/client satisfaction surveys",
+      "market research",
+      "3rd party verification",
+      "interviews for in depth exploration"
+    ]
+  },
+  {
+    "question": "TK5.1 Critically evaluate different leadership styles.",
+    "answers": [
+      "balance push and pull techniques",
+      "assumptions, unique, and constrained",
+      "aim = get best out of all at all levels via 2 way feedback",
+      "[Situational leadership model]",
+      "- instructing/directive: commanding, sharp [in critical situations]",
+      "Checklists: of key company-wide issues",
+      "- democratic/encouraging/engaging/facilitation: two way feedback with autonomy, also slow - team involved in decision making",
+      "SWOT PESTLE (for categorisation) analysis",
+      "can reduce weaknesses and threats",
+      "- servant leadership: well being of team = focus, can lack authority in high pressure situations",
+      "- transactional: clear roles/rewards, for compliance/time critical. Low innovation",
+      "ones whose (lack of) support would impact the project most - particularly any specific anti-project pressure groups",
+      "- Confidence/ability model: support and instruction for nervous low ability, neither for confident and high ability, instruction for confident , support for high ability"
+    ]
+  },
+  {
+    "question": "TK5.2 Critically analyse the behaviours and interpersonal skills that underpin effective leadership.",
+    "answers": [
+      "description, cause, probab, impact, mitigation, fallbacks, status and responsible owners (person best placed",
+      "(shared) system rather than manual spreadsheet"
+    ]
+  },
+  {
+    "question": "TK7.2 Critically evaluate the ways to identify and analyse stakeholder interests and level of influence.",
+    "answers": [
+      "- motivating others (<XP and vision)",
+      "- influence and persuade (for int/ext SH who are unsure)",
+      "- emotional intelligence and communication",
+      "- adaptability (especially vs conflict)",
+      "likelihood and impact (cost, schedule, benefits, other benefits/risks)",
+      "- decision making and judgement",
+      "basis for the SHEP"
+    ]
+  },
+  {
+    "question": "TK5.3 Critically evaluate how understanding a project environment affects the leadership style.",
+    "answers": [
+      "a/ calculation of combined risk on objectives",
+      "b/ implement pre agreed or ad hoc approach",
+      "- preferred/historical supplier to fulfill reqs",
+      "- env changes (SH reqs, regs, market) require agility and rapid decision making",
+      "estimate of hitting dates, costs or benefits",
+      "contingency to hold",
+      "quality of input",
+      "sender"
+    ]
+  },
+  {
+    "question": "TK5.4 Critically analyse the structure and content of a project vision and its importance.",
+    "answers": [
+      "which factors",
+      "influence",
+      "- kick off/team/sponsor briefings to reinforce message",
+      "key relationships with other stakeholders",
+      "change to SHE reflects the leadership and proactive role of the PM"
+    ]
+  },
+  {
+    "question": "TK6.3 Critically analyse the types of impact risks and issues could have on project delivery.",
+    "answers": [
+      "- Vision should be North Star to constantly guide decision making, team and SH engagement, scope control/change",
+      "change control",
+      "Schedule and Resource"
+    ]
+  },
+  {
+    "question": "TK7.4 Critically evaluate ways of monitoring the impact of stakeholder engagement.",
+    "answers": [
+      "curtail scope or quality",
+      "simple but not easy: communicate",
+      "very difficult, time-consuming and costly to rectify",
+      "External",
+      "Regulatory changes, market shifts, natural disasters, political instability, new laws, third-party contractor failure",
+      "fines, major delays, project shutdowns or require significant changes",
+      "better understanding of interests",
+      "- formalise reporting, communication and escalation routes",
+      "- mechanism for sharing risk perceptions and effectively responding",
+      "- monitor performance using KPI or specify in contract then check their work",
+      "- robust change control process on the project is crucial: no unknown changes should affect supplier",
+      "- review risks related with the contract mechanisms and execution to avoid a potential 'dead end' - PDS example",
+      "ensures message is received",
+      "situation, individuals, existing relationship",
+      "1. meetings",
+      "- long term contract relationships with suppliers",
+      "- cost efficiency through economies of scale particularly for recurring needs",
+      "6. mail/letters",
+      "7. social media",
+      "- predictability in cost and output reduces delivery risk",
+      "Amount of feedback likely linked to levels of trust"
+    ]
+  },
+  {
+    "question": "TK6.1 Critically analyse ways to identify risks and capture issues.",
+    "answers": [
+      "projects",
+      "crucial, particularly with high influence and or interest",
+      "opportunities and threats",
+      "not include H&S risks",
+      "Brainstorming: With or without SH",
+      "full understanding of requirements and what SHs acceptability of them could look like - better outcomes",
+      "Prompt list: Aide memoire using headings link to generic sources of risks",
+      "Primary",
+      "Secondary",
+      "organisational level?",
+      "Pre-mortem",
+      "- type of contract, of relationship, single/multiple supplier and make/do (resource) or buy.",
+      "robust analysis",
+      "register with planned responses",
+      "- basis of procurement",
+      "- scope of works: functional, technical, quality and performance requirements",
+      "- should be developed to align with proj objectives and accurate through detail: allows uniform understanding by suppliers",
+      "company org charts&reports, SH lists from previous projects, web sites, interviews, brainstorming"
+    ]
+  },
+  {
+    "question": "TK6.2 Critically evaluate techniques to assess risk.",
+    "answers": [
+      "qualitatively indicates relative significance and any links and prioritise",
+      "partners",
+      "Sufficient for many projects"
+    ]
+  },
+  {
+    "question": "TK8.3 Critically evaluate technical and commercial options that can form the basis of a procurement approach.",
+    "answers": [
+      "Quantitative risk analysis (5v5 grid",
+      "- need to achieve best value in holistic technical and commercial context, usually evaluated by different teams. Can define a split but pass/fail criteria used for non negotiables ie safety, regulatory compliance, KPIs.",
+      "- good split will depend on industry. consider, differences in % value between suppliers and in quality. in creative industry quality could be x for a market leader so saving 50% cost may not be a differentiator",
+      "Monte Carlo simulation - probabilistic analysis - predicts combined effect",
+      "SH analysis",
+      "often in a table",
+      "- technical: specs, standards, requirements, adaptability and scalability",
+      "Sensitivity Analysis",
+      "frequency/dates",
+      "feedback",
+      "barriers",
+      "- formality and records required to withstand auditing - potential for grave errors",
+      "- orgs should be formal with national legislation, frameworks governing proc and different procurement models to effectively support procurement on projects",
+      "command and control relationship is neither completely feasible or desirable",
+      "delegating with trust to engaged SH can significantly improve collaboration",
+      "Scope/Requirements",
+      "- proc process requires org strategy to deal with the huge risks of proc: supplier insolvency, delays: contingency plans",
+      "- negotiations take place after selection before contract sign off",
+      "qualitative",
+      "- discuss tech reqs, pricing, dates, performance incentives/penalties agrees with both parties",
+      "LISTEN and empower",
+      "root cause of any behaviour",
+      "Compare levels of contribution and interaction between stakeholders, and cross reference with strategy in SHEP",
+      "feedback"
+    ]
+  },
+  {
+    "question": "TK8.6 Critically analyse controls for managing a contract. (from PM view)",
+    "answers": [
+      "- open lines of comms with all SH to communicate issues and concerns",
+      "- records of all communications, decisions and changes: disputes and audits"
+    ]
+  },
+  {
+    "question": "TK8.7 Critically evaluate the benefits of procurement through framework agreements instead of single, sole, or multiple suppliers.",
+    "answers": [
+      "- greater flexibility in the face of changing requirements",
+      "- fosters long term relationships: collaboration, trust, innovation"
+    ]
+  },
+  {
+    "question": "TK7.1 Critically evaluate the importance of Stakeholder Engagement.",
+    "answers": [
+      "persons, groups or organisations with an interest",
+      "- ensure compliance and efficiency",
+      "success via an engagement strategy",
+      "understanding others' interests, perspective and complaints",
+      "addressing them. Consider roles, real nature, behaviour, motivation",
+      "- prequal will tease out capacity, capability and availability",
+      "planning",
+      "- contract taken seriously, negotiated and agreed",
+      "- relationship actively managed: communication",
+      "less influence over external stakeholders",
+      "primary stakeholders is likely to improve transition of the project into business as usual",
+      "tailor communications consistently",
+      "change over time",
+      "- timelines, milestones, delivery dates, KPIs to monitor success",
+      "dedicated communications team",
+      "map SH for and against project according to power & interest, positive & negative",
+      "high power positive",
+      "- spec ensures transparency, clear expectations, baseline and agreeemtn for risk, delays, and quality/management issues",
+      "for SH borderline between positive and negative, lookout for subtle signs of negative behaviours: silence during meetings, vague response, avoidance of direct feedback, delayed responses",
+      "can move boxes"
+    ]
+  },
+  {
+    "question": "TK7.3 Critically analyse the content of a typical communication plan.",
+    "answers": [
+      "- public: proc governed by government rules, private more flexible",
+      "- open tender: prequalified, Dynamic Purchasing System: buying common goods across public sector, procurement alliance or framework: only those collaborating can supply",
+      "- commercial focuses on contract type, risk sharing mechanism and payment structure: fixed price cost reimbursable, time and materials",
+      "medium"
+    ]
+  },
+  {
+    "question": "TK8.4 Critically evaluate the internal capacity and capability required to support a procurement process for a project.",
+    "answers": [
+      "- skilled personnel across procurement specialists, PM and financial analysts to effectively research the market& assess potential suppliers, develop specs and manage supplier relationships. I WOULD ARGUE SHOULD BE DEVELOPED IN TECHNICAL TEAMS TOO",
+      "- proc requires financial, human and tech resources, budget for proc activities . software can speed up/automate processes and comms",
+      "can become champions",
+      "- ideally f2f with right people: commercial, pm, procurement, management. evaluate: enables body language reading, any minor doubts/distrust",
+      "- ZOPA: sone of possible agreement",
+      "- BATNA: best alternative to non agreement, backup plan if talks fail",
+      "- WIN WIN: collaborate"
+    ]
+  },
+  {
+    "question": "TK8.1 Critically evaluate the purpose of establishing procurement processes in a project.",
+    "answers": [
+      "- Open to scrutiny, ethical, objective, structured",
+      "- Best VfM (vs initial price) out of a selection of potential suppliers",
+      "- comprehensive strategy > just purchasing: costs, risks, relationship mgt",
+      "- research, pre qual, tender, award, management, close",
+      "- specifics to depend on project nature and org governance",
+      "- depends on life cycle: linear - suppliers move with you, timebox: they are pre booked",
+      "- relationship required, risk/control appetite dictates options:",
+      "- as a PM, many of these not our decision (organisational governance, established functions and delegated authorities: get them in RACI ie for sign offs."
+    ]
+  },
+  {
+    "question": "TK8.2 Critically analyse information that needs to be captured in a procurement specification.",
+    "answers": [
+      "- relevant industry standards, safety regs and legal reqs, KPIs to monitor compliance",
+      "- payment schedules, risk allocation& register for pricing, specific contractual clauses",
+      "- supplier responsibilities including other parties to engage and give/get interfaces",
+      "- proc rules: complexity and value of scope",
+      "- prime v multiple suppliers: P simplifies maangement but limits visibility, multiple requires complex mgt.",
+      "- SHE skills - needs and expectations of proj teams, management and suppliers"
+    ]
   }
 ]
