@@ -21,6 +21,14 @@ from pathlib import Path
 from typing import Iterable, List
 
 
+def col_letter_to_index(col: str) -> int:
+    """Convert column letter (A, B, ..., Z, AA, AB, ...) to 0-based index."""
+    result = 0
+    for char in col.upper():
+        result = result * 26 + (ord(char) - ord('A') + 1)
+    return result - 1
+
+
 def load_rows(path: Path, sheet: str = "sheet1") -> List[List[str]]:
     """Read a worksheet's rows from an XLSX without external deps."""
     with zipfile.ZipFile(path) as zf:
@@ -37,32 +45,39 @@ def load_rows(path: Path, sheet: str = "sheet1") -> List[List[str]]:
         root = ET.fromstring(zf.read(sheet_xml))
         rows: List[List[str]] = []
         for row in root.iterfind(".//{*}sheetData/{*}row"):
-            vals: List[str] = []
+            row_data: dict[int, str] = {}
+            max_col = 0
             for cell in row:
+                ref = cell.get("r", "")
+                # Extract column letters from cell reference (e.g., "A1" -> "A", "AB12" -> "AB")
+                col_letters = "".join(c for c in ref if c.isalpha())
+                if not col_letters:
+                    continue
+                col_idx = col_letter_to_index(col_letters)
+                max_col = max(max_col, col_idx)
+
                 v = cell.find("{*}v")
                 if v is None:
-                    vals.append("")
+                    row_data[col_idx] = ""
                     continue
                 if cell.get("t") == "s":
                     idx = int(v.text)
-                    vals.append(shared[idx] if idx < len(shared) else "")
+                    row_data[col_idx] = shared[idx] if idx < len(shared) else ""
                 else:
-                    vals.append(v.text or "")
+                    row_data[col_idx] = v.text or ""
+
+            # Build row with proper column positions (fill gaps with empty strings)
+            vals = [row_data.get(i, "") for i in range(max_col + 1)]
             rows.append(vals)
         return rows
 
 
-def rows_to_cards(rows: Iterable[List[str]], header_regex: str = r"^TK", col_index: int = 0) -> list[dict]:
-    """Group rows into question/answer blocks keyed by a header regex."""
+def cells_to_cards(cells: List[str], header_regex: str = r"^TK") -> list[dict]:
+    """Convert a flat list of cells into question/answer cards."""
     header_re = re.compile(header_regex, flags=re.IGNORECASE)
     cards: list[dict] = []
     current: dict | None = None
-    for row in rows:
-        if not row or len(row) <= col_index:
-            continue
-        cell = (row[col_index] or "").strip()
-        if not cell:
-            continue
+    for cell in cells:
         if header_re.match(cell):
             if current:
                 cards.append(current)
@@ -103,10 +118,18 @@ def main(argv: list[str]) -> int:
     # Determine the number of columns
     num_cols = max(len(row) for row in rows) if rows else 0
 
-    # Process all columns and combine cards
+    # Process each column independently to avoid mixing answers between questions
     all_cards: list[dict] = []
     for col_idx in range(num_cols):
-        col_cards = rows_to_cards(rows, header_regex=args.header_pattern, col_index=col_idx)
+        # Extract just this column's cells as a flat list
+        col_cells: List[str] = []
+        for row in rows:
+            if len(row) > col_idx:
+                cell = (row[col_idx] or "").strip()
+                if cell:
+                    col_cells.append(cell)
+        # Parse questions/answers from this column's isolated data
+        col_cards = cells_to_cards(col_cells, header_regex=args.header_pattern)
         all_cards.extend(col_cards)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
